@@ -1,0 +1,15 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: VCR;
+  src: url('./assets/fonts/VCR.ttf');
+}
+
+.vcr {
+  font-family: VCR;
+  color: red
+}
+
