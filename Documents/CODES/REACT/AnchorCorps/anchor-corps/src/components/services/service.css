@@ -1,0 +1,19 @@
+
+.title {
+  font-size: 2rem;
+  line-height: 0.9;
+}
+
+
+.stretch {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-variation-settings: 'wdth' 35;
+  writing-mode: vertical-rl;
+}
+
+.stretch-portrait {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-variation-settings: 'wdth' 35;
+}
