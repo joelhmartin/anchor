@@ -122,8 +122,7 @@ const ServicePreview = () => {
         fontSize={"xxx-large"}
         textColor={"white"}
         textAlign={"center"}
-        pl={"10vw"}
-        mt={"9vh"}
+        mt={"5vh"}
         w={"100%"}
       >
         WHAT WE DO

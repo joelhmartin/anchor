@@ -22,7 +22,7 @@ const Intro = () => {
         delay: 2,
         scale: 0.5,
         top: "9vh",
-        right: "-10vw"
+        right: "-10vw",
       });
     };
 
@@ -40,24 +40,25 @@ const Intro = () => {
 
   return (
     <Box position={"relative"} backgroundColor={"black"} h={"81vh"} w={"100vw"}>
-        <Fade in={!isIntro}>
-          <VStack ref={tableRef} h={"80vh"} w={"100vw"} alignItems={"left"}>
-            <ServicePreview />
-          </VStack>
-        </Fade>
+      <Fade in={!isIntro}>
+        <VStack ref={tableRef} h={"80vh"} w={"100vw"} alignItems={"left"}>
+          <ServicePreview />
+        </VStack>
+      </Fade>
 
-        <Image
-          h={"80vh"}
-          w={"70vw"}
-          ref={ref}
-          position={"absolute"}
-          bottom={0}
-          right={'15%'}
-          className={"intro"}
-          src="images/first-page-iso.png"
-        />
-
-      <Text className={'downArrow'}>↓</Text>
+      <Image
+        h={"80vh"}
+        w={"70vw"}
+        ref={ref}
+        position={"absolute"}
+        bottom={0}
+        right={"15%"}
+        className={"intro"}
+        src="images/first-page-iso.png"
+      />
+      <Fade in={!isIntro}>
+        <Text className={"down-arrow"}>↓</Text>
+      </Fade>
     </Box>
   );
 };

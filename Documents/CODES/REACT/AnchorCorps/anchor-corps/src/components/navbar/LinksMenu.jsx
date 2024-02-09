@@ -7,6 +7,7 @@ import {
   IconButton,
   VStack,
   Spacer,
+  Button,
 } from "@chakra-ui/react";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { MdOutlineMiscellaneousServices } from "react-icons/md";
@@ -20,26 +21,24 @@ const LinksMenu = () => {
       <Spacer />
       <Menu>
         <MenuButton
-          as={IconButton}
+          as={Button}
           aria-label="Options"
           icon={<GiHamburgerMenu />}
-          variant="outline"
-        />
+          colorScheme="red"
+        >
+          <GiHamburgerMenu/>
+        </MenuButton>
         <MenuList>
-          <MenuItem as={"a"} icon={<FaPeopleGroup />} command="⌘T">
+          <MenuItem as={"a"} icon={<FaPeopleGroup />}>
             ABOUT US
           </MenuItem>
-          <MenuItem
-            as={"a"}
-            icon={<MdOutlineMiscellaneousServices />}
-            command="⌘N"
-          >
+          <MenuItem as={"a"} icon={<MdOutlineMiscellaneousServices />}>
             Services
           </MenuItem>
-          <MenuItem as={"a"} icon={<FaGratipay />} command="⌘⇧N">
+          <MenuItem as={"a"} icon={<FaGratipay />}>
             Pay My Bill
           </MenuItem>
-          <MenuItem as={"a"} icon={<MdOutlineContactPhone />} command="⌘O">
+          <MenuItem as={"a"} icon={<MdOutlineContactPhone />}>
             Contact
           </MenuItem>
         </MenuList>

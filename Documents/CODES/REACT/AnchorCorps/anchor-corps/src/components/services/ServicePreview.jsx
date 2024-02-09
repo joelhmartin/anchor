@@ -190,11 +190,11 @@ const ServicePreview = () => {
       </Text>
 
       <SimpleGrid
-        pl={"10vw"}
+        pl={"4vw"}
         w={"50vw"}
         minChildWidth="90px"
-        spacing="2px"
-        columns={{ sm: 1, md: 2, lg: 3, xl: 4 }}
+
+        columns={4}
       >
         {entries.map((entry, index) => (
           <Box key={index}>

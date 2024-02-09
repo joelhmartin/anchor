@@ -62,7 +62,7 @@ const ContactModal = () => {
       <Modal blockScrollOnMount={true} isOpen={isOpen} onClose={onClose}>
         {overlay}
         <ModalOverlay />
-        <ModalContent bg={'darkred'}>
+        <ModalContent bg={'darkred'} textColor={'white'} fontWeight={800}>
           <ModalHeader></ModalHeader>
           <ModalCloseButton />
           <ModalBody>
