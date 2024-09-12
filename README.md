@@ -1,1 +1,2 @@
 # synth-recipes
+# nuvola-redirect
